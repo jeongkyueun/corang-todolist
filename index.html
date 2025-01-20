@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TodoList</title>
+    <style>
+        /*배경색*/
+        body {
+            background-color: ivory;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        /*TodoList 제목 css*/
+        .class1{
+            color: olivedrab;
+            display: flex;
+            justify-content : center;
+            padding-top: 50px;
+            padding-bottom: 20px;
+        }
+        /*리스트 시간 css*/
+        .time{
+            color: green;
+        }
+        /*투두리스트 css*/
+        .todo-list {
+            height: 120px;
+            overflow-y:scroll;
+            border-color: white;
+            scrollbar-color: olivedrab ghostwhite;
+            background-color: white;
+        }
+        /*투두리스트 삭제 버튼 css*/
+        .delete{
+            color: white;
+            background-color: red;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        /*투두리스트 클리어 버튼 css*/
+        .clear{
+            color: white;
+            background-color: deepskyblue;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        /*투두리스트 작성 css*/
+        .list-input{
+            display: flex;
+            justify-content: center;
+        }
+        /*투두리스트 전송 버튼 css*/
+        .btn-list{
+            color: white;
+            background-color: black;
+            border-radius: 5px;
+            padding: 3px;
+            font-size: 20px;
+            padding-inline: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="todo-container">
+    <h1 class="class1">TodoList</h1>
+    <div class ="todo-list">
+        <li>
+            <span class="list">이번 주 토요일 IT 세미나 가기</span>
+            <span class="time">2025-01-17 10:00</span>
+            <button class="delete">Delete</button>
+            <button class="clear">O</button>
+        </li>
+        <li>
+            <span class="list">자바스크립트 공부하기</span>
+            <span class="time">2025-01-19 15:00</span>
+            <button class="delete">Delete</button>
+            <button class="clear">O</button>
+        </li>
+        <li>
+            <span class="list">뉴스 정독하기</span>
+            <span class="time">2025-01-21 11:00</span>
+            <button class="delete">Delete</button>
+            <button class="clear">O</button>
+        </li>
+        <li>
+            <span class="list">마트 장보기</span>
+            <span class="time">2025-01-22 19:00</span>
+            <button class="delete">Delete</button>
+            <button class="clear">O</button>
+        </li>
+        <li>
+            <span class="list">예방접종 맞기</span>
+            <span class="time">2025-01-23 13:00</span>
+            <button class="delete">Delete</button>
+            <button class="clear">O</button>
+        </li>
+        <li>
+            <span class="list">밀크쉐이크 먹기</span>
+            <span class="time">2025-01-25 19:00</span>
+            <button class="delete">Delete</button>
+            <button class="clear">O</button>
+        </li>
+    </div>
+    <br>
+    <div class="list-input">
+        <input type="text" name="list" id="list" required placeholder="TodoList를 입력하시오..">
+        <button class="btn-list">+</button>
+    </div>
+</div>
+</body>
+</html>
